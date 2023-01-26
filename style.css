@@ -1,7 +1,44 @@
-html {
+html, body {
     background:url(boobtube.jpg) no-repeat center center;
     background-size:cover;
     background-position:center left 24%;
     height:100%;
     width:100%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.savethedate p, .savethedate a {
+  font-size: 8vmin;
+  color: #FF880A;
+  text-align: center;
+  text-shadow: 5px 5px black;
+  font-family: 'Nabla', cursive;
+  margin: 0;
+  line-height: 2.5em;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  z-index: 100;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  top: 78%;
+  width: 100%;
+  left: 0;
+  height: 8px;
+  border-radius: 2px;
+  background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
+  z-index: -1;
+  box-shadow: 5px 5px black;
 }
