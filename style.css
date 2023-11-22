@@ -50,6 +50,7 @@ h1 {
 @media (min-width: 600px) {
   .content {
       max-width: 620px;
+      font-size: 2vmin;
   }
 }
 
@@ -208,6 +209,7 @@ p a:hover, .navlink a:hover {
 @media screen and (max-width: 600px) {
   #y2015 {
     background: url(images/2015-rotated.jpg) no-repeat center center;
+    background-size: cover;
     background-position: top 25% center;
   }
 }
