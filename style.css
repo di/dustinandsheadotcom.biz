@@ -205,6 +205,13 @@ p a:hover, .navlink a:hover {
   background-position: center left 60%;
 }
 
+@media screen and (max-width: 600px) {
+  #y2015 {
+    background: url(images/2015-rotated.jpg) no-repeat center center;
+    background-position: top 25% center;
+  }
+}
+
 #y2016 {
   background: url(images/2016.jpg) no-repeat center center;
   background-size: cover;
@@ -244,7 +251,7 @@ p a:hover, .navlink a:hover {
 #y2022 {
   background: url(images/2022.jpg) no-repeat center center;
   background-size: cover;
-  background-position: center left 55%;
+  background-position: center left 50%;
 }
 
 #y2023 {
