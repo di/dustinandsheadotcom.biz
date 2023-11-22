@@ -18,21 +18,16 @@ html, body {
 }
 
 .savethedate p, .savethedate a {
-  font-size: 8vmin;
-  color: #FF880A;
-  text-align: center;
-  text-shadow: 5px 5px black;
-  font-family: 'Nabla', cursive;
   margin: 0;
-  line-height: 2.5em;
 }
 
-h1 {
+h1, .savethedate p, .savethedate a {
   font-size: 8vmin;
   color: #FF880A;
   text-align: center;
-  text-shadow: 5px 5px black;
-  font-family: 'Nabla', cursive;
+  -webkit-filter: drop-shadow(5px 5px #000);
+  filter: drop-shadow(5px 5px #000);
+  font-family: 'Shrikhand', sans-serif;
   line-height: 2.5em;
 }
 
@@ -136,18 +131,26 @@ p a:hover, .navlink a:hover {
   0%, 100% {
     transform: translateY(0);
   }
-  /*25%, 75% {
-    transform: translateY(-4px);
-  }
-  */
   50% {
     transform: translateY(4px);
   }
 }
 
 .wave span {
+  background: linear-gradient(
+        45deg,
+        #FC592B,
+        #FFFABE 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
   display: inline-block;
   animation: wave 2s infinite;
+  overflow: visible;
+  padding: 0px 20px;
+  margin-left: -40px;
 }
 
 .wave span:nth-child(1) {
