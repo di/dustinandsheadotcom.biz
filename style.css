@@ -5,14 +5,16 @@ html, body {
 }
 
 .container {
-  background:url(boobtube.jpg) no-repeat center center;
-  background-size:cover;
-  background-position:center left 24%;
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
+}
+
+.firstcontainer {
+  height: 100%;
 }
 
 .savethedate p, .savethedate a {
@@ -25,10 +27,54 @@ html, body {
   line-height: 2.5em;
 }
 
+h1 {
+  font-size: 8vmin;
+  color: #FF880A;
+  text-align: center;
+  text-shadow: 5px 5px black;
+  font-family: 'Nabla', cursive;
+  line-height: 2.5em;
+}
+
+.content {
+  padding: 20px;
+  font-size: 3vmin;
+}
+
+@media (max-width: 600px) {
+  .content {
+    font-size: 4vmin;
+  }
+}
+
+@media (min-width: 600px) {
+  .content {
+      max-width: 620px;
+  }
+}
+
+.content dt, .content dd {
+  padding: 3px;
+}
+
+.content dt {
+  font-weight: bold;
+}
+
+.content dd {
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.nolineheight {
+  line-height: 0.5em;
+}
+
 a {
   position: relative;
   text-decoration: none;
   z-index: 100;
+  color: rgb(85, 26, 139);
 }
 
 a::before {
@@ -37,9 +83,178 @@ a::before {
   top: 78%;
   width: 100%;
   left: 0;
-  height: 8px;
-  border-radius: 2px;
+  height: 0.2em;
+  border-radius: 0.1em;
   background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
   z-index: -1;
-  box-shadow: 5px 5px black;
+  box-shadow: 0.1em 0.1em black;
+}
+
+.navbar {
+  font-size: 6vmin;
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  z-index: 200;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  transition: color 0.5s ease;
+}
+
+p a:hover, .navlink a:hover {
+  color: rgb(255, 0, 150);
+  animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+  0% {
+    color: rgb(255, 0, 150);
+  }
+  100% {
+    color: rgb(85, 26, 139);
+  }
+}
+
+.navlink {
+  display: inline-block;
+  padding: 10px 10px 20px 10px;
+  background-color: white;
+}
+
+#boobtube {
+  background:url(images/boobtube.jpg) no-repeat center center;
+  background-size:cover;
+  background-position:center left 24%;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  /*25%, 75% {
+    transform: translateY(-4px);
+  }
+  */
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+.wave span {
+  display: inline-block;
+  animation: wave 2s infinite;
+}
+
+.wave span:nth-child(1) {
+  animation-delay: -0.2s;
+}
+
+.wave span:nth-child(2) {
+  animation-delay: -0.4s;
+}
+
+.wave span:nth-child(3) {
+  animation-delay: -0.6s;
+}
+
+.wave span:nth-child(4) {
+  animation-delay: -0.8s;
+}
+
+.wave span:nth-child(5) {
+  animation-delay: -1s;
+}
+
+.wave span:nth-child(6) {
+  animation-delay: -1.2s;
+}
+
+.wave span:nth-child(7) {
+  animation-delay: -1.4s;
+}
+
+.wave span:nth-child(8) {
+  animation-delay: -1.6s;
+}
+
+.wave span:nth-child(9) {
+  animation-delay: -1.8s;
+}
+
+.wave span:nth-child(10) {
+  animation-delay: -2s;
+}
+
+.wave span:nth-child(11) {
+  animation-delay: -2.2s;
+}
+
+#y2014 {
+  background: url(images/2014.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center left 30%;
+}
+
+#y2015 {
+  background: url(images/2015.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center left 60%;
+}
+
+#y2016 {
+  background: url(images/2016.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center left 45%;
+}
+
+#y2017 {
+  background: url(images/2017.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center left 55%;
+}
+
+#y2018 {
+  background: url(images/2018.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center left 46%;
+}
+
+#y2019 {
+  background: url(images/2019.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center left 40%;
+}
+
+#y2020 {
+  background: url(images/2020.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center left 24%;
+}
+
+#y2021 {
+  background: url(images/2021.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center left 45%;
+}
+
+#y2022 {
+  background: url(images/2022.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center left 55%;
+}
+
+#y2023 {
+  background: url(images/2023.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center left 50%;
+}
+
+#y2024 {
+  background: #000;
+  background-size: cover;
+  background-position: center left 50%;
 }
