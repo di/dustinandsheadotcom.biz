@@ -33,7 +33,7 @@ h1, .savethedate p, .savethedate a {
 
 .content {
   padding: 20px;
-  font-size: 3vmin;
+  font-size: 4vmin;
 }
 
 @media (max-width: 600px) {
@@ -149,8 +149,7 @@ p a:hover, .navlink a:hover {
   display: inline-block;
   animation: wave 2s infinite;
   overflow: visible;
-  padding: 0px 20px;
-  margin-left: -40px;
+  padding: 0px 10px;
 }
 
 .wave span:nth-child(1) {
