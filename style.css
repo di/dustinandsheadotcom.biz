@@ -150,6 +150,8 @@ p a:hover, .navlink a:hover {
   animation: wave 2s infinite;
   overflow: visible;
   padding: 0px 10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .wave span:nth-child(1) {
